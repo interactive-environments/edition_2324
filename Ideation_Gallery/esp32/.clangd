@@ -1,0 +1,4 @@
+CompileFlags:
+  CompilationDatabase: .pio/
+  Add: [-mlong-calls, -ferror-limit=0, -isysroot=/home/USER/.platformio/packages/toolchain-xtensa-esp32s3]
+  Remove: [-fno-tree-switch-conversion, -mtext-section-literals, -mlongcalls, -fstrict-volatile-bitfields]

@@ -1,0 +1,8 @@
+.pio/
+.direnv/
+
+builds/
+
+src/secrets.cpp
+# auto-generated
+src/version.cpp

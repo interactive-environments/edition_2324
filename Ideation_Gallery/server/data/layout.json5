@@ -1,0 +1,198 @@
+{
+	groups: {
+		spiral1: {
+			branches: ["node-FE-08", "node-F6-C0", "node-17-78"],
+		},
+		spiral2: {
+			branches: ["node-0E-24", "node-08-B4", "node-07-D0"],
+		}
+	},
+	"rails": {
+		rail1: { // back
+			node: "node-0D-5C",
+			network: {
+				// "groups-spiral1": 118,
+				"groups-spiral2": 120,
+				"node-FF-B8": 26,
+				"node-FD-8C": 66,
+				"rails-rail2": 121,
+			}
+		},
+		rail2: { // across
+			node: "node-FC-8C",
+			network: {
+				"groups-spiral1": 118,
+				"groups-spiral2": 3,
+				"rails-rail1": 3,
+			}
+		}
+	},
+	"nodes": {
+		"node-FC-8C": {
+			"type": "rail",
+			"leds": 121,
+			"staging": false
+		},
+		"node-0D-5C": {
+			"type": "rail",
+			"leds": 121,
+			"staging": false
+		},
+		"node-09-04": {
+			type: "rail",
+			leds: 121,
+			staging: true
+		},
+		"node-0E-44": {
+			"type": "sensor",
+			"staging": false,
+			"x": 400,
+			"y": 500,
+			"z": 1000
+		},
+		"node-08-B4": {
+			"type": "spiral",
+			"x": 0,
+			"y": 0,
+			"z": 1000,
+			"leds": 30,
+			"tags": [
+				"design",
+				"tech",
+			],
+			staging: false
+		},
+		"node-F6-C0": {
+			"type": "spiral",
+			"x": 500,
+			"y": 500,
+			"z": 1000,
+			"leds": 40,
+			"tags": [
+				"art",
+				"design"
+			]
+		},
+		"node-17-78": {
+			"type": "spiral",
+			"x": 500,
+			"y": 500,
+			"z": 1000,
+			"leds": 29,
+			"tags": [
+				"tech",
+				"design"
+			]
+		},
+		"node-0E-24": {
+			"type": "spiral",
+			"x": 1000,
+			"y": 0,
+			"z": 1000,
+			"leds": 39,
+			"tags": [
+				"art",
+			]
+		},
+		"node-07-D0": {
+			"type": "spiral",
+			"x": 2000,
+			"y": 0,
+			"z": 2000,
+			"leds": 29,
+			"tags": [
+				"art",
+			],
+			staging: false
+		},
+		"node-FE-08": {
+			"type": "spiral",
+			"x": 1000,
+			"y": 0,
+			"z": 1000,
+			"leds": 29,
+			"tags": [
+				"art",
+				"design",
+			]
+		},
+		// hanging spirals
+		"node-FD-8C": { // left
+			"type": "spiral",
+			sensor: true,
+			reversed: true,
+			leds: 20,
+			cooldown: 5000,
+			threshold: 6000,
+			x: 0,
+			y: 0,
+			z: 0,
+			tags: [
+				"art",
+				"engineering"
+			]
+		},
+		"node-FF-B8": { // right
+			"type": "spiral",
+			sensor: true,
+			reversed: true,
+			"leds": 20,
+			cooldown: 5000,
+			threshold: 6000,
+			x: 0,
+			y: 0,
+			z: 0,
+			tags: [
+				"design",
+				"art",
+				"engineering"
+			]
+		},
+		// "virtual-0": {
+		// 	"x": 900,
+		// 	"y": 50,
+		// 	"z": 100,
+		// 	"tags": [
+		// 		"tech"
+		// 	]
+		// },
+		// "virtual-1": {
+		// 	"x": 900,
+		// 	"y": 50,
+		// 	"z": 100,
+		// 	"tags": [
+		// 		"tech"
+		// 	]
+		// },
+		// "virtual-2": {
+		// 	"x": 900,
+		// 	"y": 100,
+		// 	"z": 100,
+		// 	"tags": [
+		// 		"art",
+		// 		"tech"
+		// 	]
+		// },
+		// "bitsy-ED-B8": {
+		// 	"x": 700,
+		// 	"y": 0,
+		// 	"z": 100,
+		// 	"tags": [
+		// 		"art",
+		// 		"tech"
+		// 	]
+		// }
+	},
+	"tags": {
+		"art": "#ff0000",
+		"literature": "#ff8a30",
+		"design": "#ffc943",
+		"health": "#96d500",
+		"sustainability": "#008700",
+		"tech": "#7ccbeb",
+		"engineering": "#3061ff",
+		"cultural": "#8200ff",
+		"historical": "#b18cff",
+		"research": "#ef70e0"
+	}
+}

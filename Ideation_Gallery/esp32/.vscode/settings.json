@@ -1,0 +1,8 @@
+{
+  "clangd.path": "/home/f0x/.esp-clang/bin/clangd",
+  // "clangd.arguments": ["--query-driver=/home/f0x/.platformio/packages/toolchain-xtensa-esp32s3/bin/xtensa-esp32s3-elf-g++"],
+  "clangd.arguments": ["--query-driver=/home/f0x/.platformio/packages/toolchain-xtensa-esp32s3@8.4.0+2021r2-patch5/bin/xtensa-esp32s3-elf-g++"],
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "editor.inlayHints.enabled": "offUnlessPressed"
+}

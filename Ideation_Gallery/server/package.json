@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "@f0x52/eslint-config": "^1.0.1",
+    "eslint": "^8.56.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "cidr-tools": "4",
+    "euclidean-distance": "^1.0.0",
+    "json5": "^2.2.3",
+    "just-random": "^3.2.0",
+    "just-shuffle": "^4.2.0",
+    "mqttr": "^3.1.0",
+    "nanoid": "3",
+    "osc-min": "^1.1.2"
+  }
+}
