@@ -1,6 +1,6 @@
 # Ideation Gallery
 
-![ESP32 nodes used in the system](./physical/spirals-end/overview.jpg)
+![](./ideation-gallery.jpg)
 
 Sourcecode, and some of the fabrication files for the Ideation Gallery prototype.
 Basic architecture is a Node.js server (`./server` directory) running on a Raspberry Pi. This also runs the central MQTT server (mosquitto).
