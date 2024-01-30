@@ -1,0 +1,66 @@
+[
+    {
+      "coordinates": {
+        "q": -4,
+        "s": -6,
+        "r": 10
+      },
+      "color": "fill-indigo-600"
+    },
+    {
+      "coordinates": {
+        "q": 4,
+        "s": -10,
+        "r": 6
+      },
+      "color": "fill-red-600"
+    },
+    {
+        "coordinates": {
+          "q": 10,
+          "s": -10,
+          "r": 0
+        },
+        "color": "fill-purple-600"
+    },
+    {
+        "coordinates": {
+          "q": 10,
+          "s": 0,
+          "r": -10
+        },
+        "color": "fill-pink-600"
+    },
+    {
+        "coordinates": {
+          "q": 4,
+          "s": 6,
+          "r": -10
+        },
+        "color": "fill-green-600"
+    },
+    {
+        "coordinates": {
+          "q": -4,
+          "s": 10,
+          "r": -6
+        },
+        "color": "fill-sky-600"
+    },
+    {
+        "coordinates": {
+          "q": -10,
+          "s": 10,
+          "r": 0
+        },
+        "color": "fill-orange-600"
+    },
+    {
+        "coordinates": {
+          "q": -10,
+          "s": 0,
+          "r": 10
+        },
+        "color": "fill-yellow-600"
+    }
+]  
