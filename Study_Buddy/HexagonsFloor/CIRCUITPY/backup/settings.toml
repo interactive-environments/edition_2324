@@ -1,0 +1,16 @@
+# System settings
+name="node-3"
+id="system-1-node-3"
+system_id="system-1"
+color="#0000FF"
+intensity_delta=1
+
+# WiFi setup
+wifi_enable="true"
+wifi_ssid="test"
+wifi_password="test"
+wifi_timeout=5
+
+# Outputs
+output_led_leds=1
+output_led_order="GRBW"
