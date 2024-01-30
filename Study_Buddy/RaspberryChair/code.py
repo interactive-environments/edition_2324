@@ -12,8 +12,8 @@ baud_rate = 9600
 # -- MQTT configuration --
 broker_address='ide-education.cloud.shiftr.io'
 mqtt_username='ide-education'
-mqtt_password='Sy0L85iwSSgc1P7E'
-mqtt_client_id='RasPi-Biochair'
+mqtt_password='REPLACE_WITH_PASSWORD'
+mqtt_client_id='REPLACE_WITH_USERNAME'
 
 port=1883
 topic='biochair/data'
