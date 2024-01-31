@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:4173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
+  <link rel="stylesheet" as="style" onload="this.rel=&#39;stylesheet&#39;" href="./DELPHI_files/css2">
+  <link rel="preload" as="font" type="font/eot" href="http://localhost:4173/assets/materialdesignicons-webfont-861aea05.eot" crossorigin="anonymous">
+  <link rel="preload" as="font" type="font/woff2" href="http://localhost:4173/assets/materialdesignicons-webfont-e52d60f6.woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" type="font/woff" href="http://localhost:4173/assets/materialdesignicons-webfont-48d3eec6.woff" crossorigin="anonymous">
+  <link rel="preload" as="font" type="font/ttf" href="http://localhost:4173/assets/materialdesignicons-webfont-bd725a7a.ttf" crossorigin="anonymous">
+
+  
+  <link rel="icon" href="http://localhost:4173/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DELPHI</title>
+  <script type="module" crossorigin="" src="./DELPHI_files/index-7227f80c.js.download"></script>
+  <link rel="stylesheet" href="./DELPHI_files/index-174d69c8.css">
+<style type="text/css" id="operaUserStyle"></style><style type="text/css" id="vuetify-theme-stylesheet">:root {
+      --v-theme-background: 255,255,255;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 255,255,255;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 255,255,255;
+      --v-theme-surface-bright-overlay-multiplier: 1;
+      --v-theme-surface-variant: 66,66,66;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 24,103,192;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 31,85,146;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 92,187,246;
+      --v-theme-secondary-overlay-multiplier: 1;
+      --v-theme-secondary-darken-1: 1,135,134;
+      --v-theme-secondary-darken-1-overlay-multiplier: 1;
+      --v-theme-error: 176,0,32;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 1;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 1;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 1;
+      --v-theme-on-background: 0,0,0;
+      --v-theme-on-surface: 0,0,0;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 0,0,0;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 0, 0, 0;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.04;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.12;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 245, 245, 245;
+      --v-theme-on-code: 0, 0, 0;
+    }
+    .v-theme--light {
+      color-scheme: normal;
+      --v-theme-background: 255,255,255;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 255,255,255;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 255,255,255;
+      --v-theme-surface-bright-overlay-multiplier: 1;
+      --v-theme-surface-variant: 66,66,66;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 24,103,192;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 31,85,146;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 92,187,246;
+      --v-theme-secondary-overlay-multiplier: 1;
+      --v-theme-secondary-darken-1: 1,135,134;
+      --v-theme-secondary-darken-1-overlay-multiplier: 1;
+      --v-theme-error: 176,0,32;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 1;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 1;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 1;
+      --v-theme-on-background: 0,0,0;
+      --v-theme-on-surface: 0,0,0;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 0,0,0;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 0, 0, 0;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.04;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.12;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 245, 245, 245;
+      --v-theme-on-code: 0, 0, 0;
+    }
+    .v-theme--dark {
+      color-scheme: dark;
+      --v-theme-background: 18,18,18;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 33,33,33;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 204,191,214;
+      --v-theme-surface-bright-overlay-multiplier: 2;
+      --v-theme-surface-variant: 163,163,163;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 66,66,66;
+      --v-theme-primary: 33,150,243;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 39,124,193;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 84,182,178;
+      --v-theme-secondary-overlay-multiplier: 2;
+      --v-theme-secondary-darken-1: 72,169,166;
+      --v-theme-secondary-darken-1-overlay-multiplier: 2;
+      --v-theme-error: 207,102,121;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 2;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 2;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 2;
+      --v-theme-on-background: 255,255,255;
+      --v-theme-on-surface: 255,255,255;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 255, 255, 255;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 1;
+      --v-medium-emphasis-opacity: 0.7;
+      --v-disabled-opacity: 0.5;
+      --v-idle-opacity: 0.1;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.16;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 52, 52, 52;
+      --v-theme-on-code: 204, 204, 204;
+    }
+    .bg-background {
+      --v-theme-overlay-multiplier: var(--v-theme-background-overlay-multiplier);
+      background-color: rgb(var(--v-theme-background)) !important;
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .bg-surface {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface)) !important;
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .bg-surface-bright {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-bright-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-bright)) !important;
+      color: rgb(var(--v-theme-on-surface-bright)) !important;
+    }
+    .bg-surface-variant {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-variant-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-variant)) !important;
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .bg-primary {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-overlay-multiplier);
+      background-color: rgb(var(--v-theme-primary)) !important;
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .bg-primary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-primary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .bg-secondary {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary)) !important;
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .bg-secondary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .bg-error {
+      --v-theme-overlay-multiplier: var(--v-theme-error-overlay-multiplier);
+      background-color: rgb(var(--v-theme-error)) !important;
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .bg-info {
+      --v-theme-overlay-multiplier: var(--v-theme-info-overlay-multiplier);
+      background-color: rgb(var(--v-theme-info)) !important;
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .bg-success {
+      --v-theme-overlay-multiplier: var(--v-theme-success-overlay-multiplier);
+      background-color: rgb(var(--v-theme-success)) !important;
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .bg-warning {
+      --v-theme-overlay-multiplier: var(--v-theme-warning-overlay-multiplier);
+      background-color: rgb(var(--v-theme-warning)) !important;
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+    .text-background {
+      color: rgb(var(--v-theme-background)) !important;
+    }
+    .border-background {
+      --v-border-color: var(--v-theme-background);
+    }
+    .text-surface {
+      color: rgb(var(--v-theme-surface)) !important;
+    }
+    .border-surface {
+      --v-border-color: var(--v-theme-surface);
+    }
+    .text-surface-bright {
+      color: rgb(var(--v-theme-surface-bright)) !important;
+    }
+    .border-surface-bright {
+      --v-border-color: var(--v-theme-surface-bright);
+    }
+    .text-surface-variant {
+      color: rgb(var(--v-theme-surface-variant)) !important;
+    }
+    .border-surface-variant {
+      --v-border-color: var(--v-theme-surface-variant);
+    }
+    .on-surface-variant {
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .text-primary {
+      color: rgb(var(--v-theme-primary)) !important;
+    }
+    .border-primary {
+      --v-border-color: var(--v-theme-primary);
+    }
+    .text-primary-darken-1 {
+      color: rgb(var(--v-theme-primary-darken-1)) !important;
+    }
+    .border-primary-darken-1 {
+      --v-border-color: var(--v-theme-primary-darken-1);
+    }
+    .text-secondary {
+      color: rgb(var(--v-theme-secondary)) !important;
+    }
+    .border-secondary {
+      --v-border-color: var(--v-theme-secondary);
+    }
+    .text-secondary-darken-1 {
+      color: rgb(var(--v-theme-secondary-darken-1)) !important;
+    }
+    .border-secondary-darken-1 {
+      --v-border-color: var(--v-theme-secondary-darken-1);
+    }
+    .text-error {
+      color: rgb(var(--v-theme-error)) !important;
+    }
+    .border-error {
+      --v-border-color: var(--v-theme-error);
+    }
+    .text-info {
+      color: rgb(var(--v-theme-info)) !important;
+    }
+    .border-info {
+      --v-border-color: var(--v-theme-info);
+    }
+    .text-success {
+      color: rgb(var(--v-theme-success)) !important;
+    }
+    .border-success {
+      --v-border-color: var(--v-theme-success);
+    }
+    .text-warning {
+      color: rgb(var(--v-theme-warning)) !important;
+    }
+    .border-warning {
+      --v-border-color: var(--v-theme-warning);
+    }
+    .on-background {
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .on-surface {
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .on-surface-bright {
+      color: rgb(var(--v-theme-on-surface-bright)) !important;
+    }
+    .on-primary {
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .on-primary-darken-1 {
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .on-secondary {
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .on-secondary-darken-1 {
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .on-error {
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .on-info {
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .on-success {
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .on-warning {
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+</style><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:4173/assets/Default-f4a6522f.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:4173/assets/tag-749aa356.js"><link rel="stylesheet" href="./DELPHI_files/Default-71d361fe.css"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:4173/assets/Home-b4853a3e.js"><link rel="stylesheet" href="./DELPHI_files/Home-54c1f447.css"><script src="chrome-extension://ccnckbpmaceehanjmeomladnmlffdjgn/content/fido2/page-script.js" id="bw-fido2-page-script"></script></head>
+
+<body>
+  <div id="app" data-v-app=""><div class="v-application v-theme--light v-layout v-layout--full-height v-locale--is-ltr"><div class="v-application__wrap"><main class="v-main" style="--v-layout-left: 0px; --v-layout-right: 0px; --v-layout-top: 0px; --v-layout-bottom: 0px;"><div data-v-7ea61fc8="" class="h-screen w-100 main" style="background-color: rgb(27, 249, 25); transition: background-color 1s ease 0s;"><!----><div data-v-7ea61fc8="" class="wrapper"><div data-v-7ea61fc8="" class="text-transition"><div data-v-7ea61fc8="" class=""><div data-v-7ea61fc8="" class="card__positioner"><div data-v-105c6565="" class="initial-message" style="color: rgb(0, 0, 0);"><span data-v-105c6565="">Anticipate,  with  patience  in  your  heart,
+As  verses  from  above  shall  soon  depart,
+And  like  autumn  leaves  in  a  gentle  breeze,
+Your  poem  descends,  to  alight  with  ease. </span></div><!----></div></div></div></div></div><div data-v-7ea61fc8="" class="offscreen-element"><div data-v-7ea61fc8="" class="card__wrapper"><div class="card__container" style="background-color: rgb(27, 249, 25); color: rgb(0, 0, 0);"><div class="color__container"><div class="color__name"><span>Green</span></div><div class="color__hex"><span>#1bf919</span></div></div><div class="poem__container"><div class="poem__inner"><span class="poem__text">In Delft's hallowed halls, a vibrant emerald,
+Nature's brushstrokes adorn the walls unseen.
+A beacon of life, whispering tales untold,
+Unleash your spirit, let creation gleam.</span></div></div><div class="title__container"><div class="title__logo"><svg viewBox="75.73 184.7194 99.21 38.6906" xmlns="http://www.w3.org/2000/svg"><path d="M104.55,219.69c2.49,0,3.85-1.66,3.85-3.98v-11.84h5.3v12.11c-0.05,5.33-4.32,7.42-9.15,7.42c-4.83,0-9.09-2.09-9.15-7.42 v-12.11h5.3v11.84C100.71,218.03,102.06,219.69,104.55,219.69z" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)" style="fill: rgb(0, 0, 0);"></path><polygon points="81.67,223 86.97,223 86.97,207.58 92.91,207.58 92.91,203.87 75.73,203.87 75.73,207.58 81.67,207.58 	" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)" style="fill: rgb(0, 0, 0);"></polygon><path d="M94.41,194.55c-1.29,0.41-2.63,0.08-2.62-1.65c0-2.64,6.19-4.85,7.05-7.15c0.21-0.57,0.23-1.05-0.05-1.03 c-0.2,0.01-0.04,0.3-0.48,0.73c-2.56,2.57-6.86,2.56-10.16,4.04c-2.16,0.97-8.5,3.95-7.04,10.6c0.07,0.32,0.26,1.37,0.45,1.37 c0.22,0,0.22-0.63,0.22-1.39c-0.05-3.96,4.64-5.06,6.17-7.65c0.18-0.31,0.5-0.74,0.57-0.54c0.04,0.1,0.01,0.24-0.05,0.52 c-0.48,2.13-2.7,3.49-2.07,5.01c0.82,1.97,3.17,0.5,3.9-0.77c0.19-0.35,0.3-0.57,0.43-0.53c0.1,0.03,0.09,0.43,0.03,0.79 c-0.39,2.29-0.91,3.57-2.59,4.88c-0.54,0.42-1.38,0.5-1.27,0.82c0.03,0.08,0.39,0.07,0.68,0.04c4.46-0.29,8.19-5.54,9.18-8.98 c0.1-0.24,0.13-0.47,0.03-0.55c-0.13-0.1-0.33,0.13-0.53,0.31C95.75,193.88,95.05,194.35,94.41,194.55z" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)" style="fill: rgb(0, 0, 0);"></path><path d="M139.67,215.08c0.02-2.08,1.27-3.95,3.37-3.95c2.44,0,3.39,1.67,3.39,3.95H139.67z M149.09,216.83v-1.25 c0-3.68-2.09-6.28-5.86-6.28c-4.21,0-6.18,3.26-6.18,7.16c0,3.92,1.7,6.95,5.97,6.95c3.18,0,5.51-1.51,5.91-4.53h-2.65 c-0.29,1.93-1.27,2.7-3.23,2.7c-2.57,0-3.43-2.29-3.43-4.74H149.09z" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)" style="fill: rgb(0, 0, 0);"></path><rect x="152.14" y="203.87" width="2.52" height="19.13" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)" style="fill: rgb(0, 0, 0);"></rect><path d="M162.56,223v-11.55h3.07v-1.75h-3.07v-2.15c0-1.54,0.74-1.8,2.17-1.8c0.42,0,0.85,0.05,1.27,0.08v-2.09 c-0.59-0.13-1.19-0.27-1.8-0.27c-2.38,0-4.16,1.2-4.16,3.74v2.49h-2.6v1.75h2.6V223H162.56z" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)" style="fill: rgb(0, 0, 0);"></path><path d="M167.07,209.7v1.75h2.28v8.48c0,1.77,0.03,3.47,3.77,3.47c0.58,0,1.13-0.05,1.72-0.16v-1.93c-0.41,0.1-0.93,0.16-1.33,0.16 c-0.9,0-1.64-0.45-1.64-1.4v-8.61h3.07v-1.75h-3.07v-3.63l-2.52,0.79v2.84L167.07,209.7z" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)" style="fill: rgb(0, 0, 0);"></path><path d="M119,223h6.57c8.18,0,9.04-6.93,9.04-9.57c0-2.64-0.86-9.57-9.04-9.57H119V223z M121.65,206.15h3.92 c4.42,0,6.26,3.34,6.26,7.29c0,3.95-1.84,7.29-6.26,7.29h-3.92V206.15z" transform="matrix(1, 0, 0, 1, 0, 2.842170943040401e-14)" style="fill: rgb(0, 0, 0);"></path></svg></div><div class="title__text"><span>DELPHI</span></div></div></div></div></div></main></div></div></div>
+  
+
+
+
+</body></html>
