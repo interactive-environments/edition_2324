@@ -1,0 +1,3 @@
+Adafruit CircuitPython 8.2.8 on 2023-11-16; Arduino Nano RP2040 Connect with rp2040
+Board ID:arduino_nano_rp2040_connect
+UID:5034C6067A848218
