@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Leave a comment</title>
+    <link rel="stylesheet" type="text/css" href='../stylesheets/style.css'>
+  </head>
+  <body>
+    <div class="container">
+
+      <% if (action == 'comment') { %>
+      <style>
+        body {
+          background-image: url('../images/background_p2_black.gif');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      </style>
+      <div class="line"></div>
+      <div class="container">
+        <div class="title-box">
+          <h1><%= title %></h1>
+        </div>
+        <div class="comment">
+          <form method="POST" action="/comment" class="comment-form">
+            <div class="comment-textarea-container">
+              <textarea name="comment" id="comment" class="comment-textarea" placeholder="Your comment..."></textarea>
+              <div id="character-counter">0/500</div>
+              <div class="press-next">
+                <span>Press NEXT</span>
+                <div class="right-arrow">&#10132;</div>
+              </div>
+            </div>
+            <div class="comment-buttons">
+              <a href="/" class="go-back-button">Go back</a>
+              <input type="submit" name="submit_button" class="submit-button" value="Enter" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var commentTextarea = document.getElementById("comment");
+          var counter = document.getElementById("character-counter");
+
+          commentTextarea.addEventListener("input", function() {
+            var currentLength = commentTextarea.value.length;
+            var maxLength = 500;
+            counter.textContent = currentLength + "/" + maxLength;
+            if (currentLength > maxLength) {
+              counter.style.color = "red";
+            } else {
+              counter.style.color = "grey";
+            }
+          });
+
+          commentTextarea.focus();
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+          document.addEventListener("keydown", function(event) {
+            if (event.code === "Numpad2") {
+              document.querySelector('.comment-form input[type="submit"]').click();
+            } else if (event.code === "Numpad8") {
+              document.querySelector('.go-back-button').click();
+            }
+          });
+        });
+      </script>
+
+      <% } else if (action == 'thanks') { %>
+      <style>
+        body {
+          background-image: url('../images/background_p1_black.gif');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      </style>
+      <div class="title-box">
+        <h2>Thank you for sharing your comment!</h2>  
+        <img src="../images/leaf.png" alt="Leaf image" style="width: 45px; height: 45px; margin-top: 30px; margin-bottom: -15px">
+        <p>Take the leaf</p>
+        <p class="p2">and see what other people shared</p>
+        <h4> <br>You will be redirected to the main page automatically</h4>
+      </div>
+      <div class="overlay">
+        <img src="../images/leaf_anim_2.gif" alt="Leaf animation" class="leaf-anim">
+      </div>
+      <script>
+        fetch('/send-mqtt')
+        .then(function(response) {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.text();
+        })
+        .then(function(data) {
+          console.log(data);
+        })
+        .catch(function(error) {
+          console.error('There was a problem with the fetch operation:', error);
+        });
+        
+        setTimeout(function() {
+          window.location.href = '/';
+        }, 10000);
+        
+        document.addEventListener("DOMContentLoaded", function() {
+          document.addEventListener("keydown", function(event) {
+            if (event.code === "Numpad8") {
+              window.location.href = "..";
+            }
+          });
+        });
+      </script>
+
+      <% } else { %>
+      <style>
+        body {
+          background-image: url('../images/background_p1_black.gif');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .title-box {
+          padding-bottom: 20px;
+        }
+      </style>
+      <div class="title-box">
+        <h1><%= title %></h1>
+        <div class="press-enter">
+          <a>Press NEXT to leave a comment</a>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          document.addEventListener("keydown", function(event) {
+            if (event.code === "Numpad2") {
+              window.location.href = "/comment";
+            }
+          });
+        });
+      </script>
+  
+      <% } %>
+  </body>
+</html>
