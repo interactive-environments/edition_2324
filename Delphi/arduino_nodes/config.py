@@ -43,10 +43,10 @@ debug = False
 wifi = SimpleNamespace()
 wifi.check_interval = 30
 wifi.connection_attempts = 2
-wifi.mqtt_broker = "rjrietdijk.com"
+wifi.mqtt_broker = ""
 wifi.mqtt_broker_port = 1883
-wifi.mqtt_broker_username = "ie_minor"
-wifi.mqtt_broker_password = "wieditleesttrekteenbak"
-wifi.secrets = {"ssid": ["OnePlus 9", ".", "Marie's iPhone", "capibara"], "password": ["g95zvuhm", "doobadoo", "birteboo123", "09060110"]}
+wifi.mqtt_broker_username = ""
+wifi.mqtt_broker_password = ""
+wifi.secrets = {"ssid": [], "password": []}
 
 mqtt_prepend = f"{project_name}/{system_id}"
